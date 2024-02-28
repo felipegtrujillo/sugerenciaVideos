@@ -47,9 +47,9 @@ class Reproductor extends Multimedia {
   }
 }
 
-let Musica = new Reproductor("https://www.youtube.com/watch?v=Kp7eSUU9oy8", 'musica');
-let Pelicula = new Reproductor("https://www.youtube.com/watch?v=UoSSbmD9vqc" , "peliculas" );
-let Serie = new Reproductor("https://www.youtube.com/watch?v=3bQ1wHdOHxQ" , "series" ); 
+let Musica = new Reproductor("https://www.youtube.com/embed/9IZKcb3LndA?si=zaYJdU2YauO8KSk1", 'musica');
+let Pelicula = new Reproductor("https://www.youtube.com/embed/UoSSbmD9vqc?si=L-XQibhpchY8EPez" , "peliculas" );
+let Serie = new Reproductor("https://www.youtube.com/embed/3bQ1wHdOHxQ?si=5Rmd03mvgfRud8v_" , "series" ); 
 
 Musica.playMultimedia();
 Pelicula.playMultimedia();
