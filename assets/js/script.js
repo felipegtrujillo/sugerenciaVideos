@@ -40,8 +40,7 @@ class Reproductor extends Multimedia {
   }
 
   setInicio(tiempoInicio) {
-     let url = super.getUrl();
-     let urlInicio = ` ${url}?start=${tiempoInicio}`;   
+     let urlInicio = ` ${this._url}?start=${tiempoInicio}`;   
      let iframe = document.getElementById(this._id);
      iframe.setAttribute("src", urlInicio);
    
