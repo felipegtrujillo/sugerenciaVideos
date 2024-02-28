@@ -59,5 +59,3 @@ serie.playMultimedia();
 serie.setInicio(60); 
 
 
-
-/* . Utiliza el método “setInicio” para modificar el tiempo de inicio en alguna de las instancias creadas. */
