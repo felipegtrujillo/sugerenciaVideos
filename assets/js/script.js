@@ -40,21 +40,24 @@ class Reproductor extends Multimedia {
   }
 
   setInicio(tiempoInicio) {
-     let urlInicio = ` ${this._url}?start=${tiempoInicio}`;   
+     let urlTime= `${this._url}&start=${tiempoInicio}`;  
      let iframe = document.getElementById(this._id);
-     iframe.setAttribute("src", urlInicio);
+     iframe.setAttribute("src", urlTime);
    
   }
 }
 
-let Musica = new Reproductor("https://www.youtube.com/embed/9IZKcb3LndA?si=zaYJdU2YauO8KSk1", 'musica');
-let Pelicula = new Reproductor("https://www.youtube.com/embed/UoSSbmD9vqc?si=L-XQibhpchY8EPez" , "peliculas" );
-let Serie = new Reproductor("https://www.youtube.com/embed/3bQ1wHdOHxQ?si=5Rmd03mvgfRud8v_" , "series" ); 
+let musica = new Reproductor("https://www.youtube.com/embed/9IZKcb3LndA?si=zaYJdU2YauO8KSk1", 'musica');
+let pelicula = new Reproductor("https://www.youtube.com/embed/UoSSbmD9vqc?si=L-XQibhpchY8EPez" , "peliculas" );
+let serie = new Reproductor("https://www.youtube.com/embed/3bQ1wHdOHxQ?si=5Rmd03mvgfRud8v_" , "series" ); 
 
-Musica.playMultimedia();
-Pelicula.playMultimedia();
-Serie.playMultimedia();
+musica.playMultimedia();
+musica.setInicio(30); 
+pelicula.playMultimedia();
+pelicula.setInicio(30); 
+serie.playMultimedia();
+serie.setInicio(60); 
 
-Musica.setInicio(10);
+
 
 /* . Utiliza el método “setInicio” para modificar el tiempo de inicio en alguna de las instancias creadas. */
