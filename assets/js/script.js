@@ -40,9 +40,9 @@ class Reproductor extends Multimedia {
   }
 
   setInicio(tiempoInicio) {
-     let urlTime= `${this._url}&start=${tiempoInicio}`;  
+     let urlSetTime= `${this._url}&start=${tiempoInicio}`;  
      let iframe = document.getElementById(this._id);
-     iframe.setAttribute("src", urlTime);
+     iframe.setAttribute("src", urlSetTime);
    
   }
 }
@@ -56,6 +56,5 @@ musica.setInicio(30);
 pelicula.playMultimedia();
 pelicula.setInicio(30); 
 serie.playMultimedia();
-serie.setInicio(60); 
 
 
